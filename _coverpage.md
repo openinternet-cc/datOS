@@ -1,4 +1,4 @@
-![logo](assets/kid.png)
+![logo](assets/dat.png)
 
 # Dat Awesome Tether OS
 
