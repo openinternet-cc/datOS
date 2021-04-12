@@ -18,13 +18,13 @@ DatOS addresses this issue in 2 main ways:
 
 - force TTL 64 for outgoing HTTP packets (no need to configure on each individual device)
 
-- auto detects and reconnects when mobile data disconnected or throttled
+In Progress:
+
+- auto detect and reconnect when mobile data disconnected or throttled 
 
 # Ease of Use
 
 DatOS also seeks to make the phone to repurpose as a router, as such we make some basic changes for better user experience.
-
-- start wifi tether on boot
 
 - default to 5GHZ wifi band
 
@@ -34,11 +34,15 @@ DatOS also seeks to make the phone to repurpose as a router, as such we make som
 
 - ships with F-droid, open source app store, for easy flexibility and customization options
 
+In Progress:
+
+- start/restart wifi tether on boot
+
 # Devices
 
 Currently, DatOS is supported on:
 
-- LeEco Le S2
+- LeEco Le S2 (available for purchase [here](https://openinternet.cc/#shop))
 
 > NOTE: If you would like to help expand DatOS support to new devices, please reach out to me personally at glenn@openinternet.cc
 
