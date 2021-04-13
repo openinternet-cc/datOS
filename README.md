@@ -79,14 +79,14 @@ Step 2) Skip to [installing](#installing) section
 
 <summary style='font-weight:bold;font-size:large;'>Build Instructions</summary>
 
-#### Requirements
+__Requirements__
 
 - A LeEco Le 2 or compatible device  
 - A relatively recent 64-bit computer (Linux, macOS, or Windows) with a reasonable amount of RAM and about 200 GB of free storage (more if you enable ccache or build for multiple devices). The less RAM you have, the longer the build will take. Aim for 16 GB RAM or more, enabling ZRAM can be helpful. Using SSDs results in considerably faster build times than traditional hard drives.  
 - A decent internet connection and reliable electricity. :)  
 - Some familiarity with basic Android operation and terminology.
 
-#### Install Platform Tools
+__Install Platform Tools__
 
 Install adb and fastboot, if you don't already have them installed.  
 ```
@@ -103,7 +103,7 @@ fi
 ``` 
 Then, run `source ~/.profile` to update your environment.
 
-#### Install Build Packages
+__Install Build Packages__
 
 To install the build packages, run the following:
 
@@ -112,7 +112,7 @@ apt-get update && \
 apt-get install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
 ```
 
-#### Create directories
+__Create directories__
 
 You’ll need to set up some directories in your build environment.
 
@@ -123,7 +123,7 @@ mkdir -p ~/android/system
 ```
 The ~/bin directory will contain the git-repo tool (commonly named “repo”) and the ~/android/system directory will contain the source code of DatOS.
 
-#### Install the `repo` command:
+__Install the `repo` command__
 
 Enter the following to download the repo binary and make it executable (runnable):  
 ```
@@ -131,14 +131,15 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 
-#### Configure git
+__Configure git__  
+
 Given that repo requires you to identify yourself to sync Android, run the following commands to configure your git identity:  
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-#### Turn on caching to speed up build
+__Turn on caching to speed up build__
 
 Make use of ccache if you want to speed up subsequent builds by running:
 ```
@@ -150,20 +151,21 @@ and adding that line to your ~/.bashrc file. Then, specify the maximum amount of
 ccache -M 50G
 ```
 
-#### Initialize the DatOS source repository
+__Initialize the DatOS source repository__
+
 ```
 cd ~/android/system
 repo init -u https://github.com/openinternet-cc/android.git -b lineage-17.1
 ```
 
-#### Download the source code
+__Download the source code__
 
 To start the download of the source code to your computer, type the following:
 ```
 repo sync
 ```
 
-#### Prepare the device-specific code
+__Prepare the device-specific code__
 
 ```
 source build/envsetup.sh
@@ -172,7 +174,7 @@ breakfast s2
 
 > NOTE: If you are building for a new or unsupported device, you will need to [do some extra steps here](https://wiki.lineageos.org/devices/s2/build#extract-proprietary-blobs) for your specific device.
 
-#### Start the build
+__Start the build__  
 
 To start the build, type:
 ```
@@ -189,12 +191,12 @@ Good job! If you made it this far, you have successfully built DatOS! Now, proce
 <summary id='install' style='font-weight:bold;font-size:large;'>Installation Instructions</summary>
 
 
-#### Requirements
+__Requirements__
 
-- [TWRP S2 Recovery](https://dl.twrp.me/s2/)  
-- `adb` & `fastboot` installed
+- custom recovery - [TWRP S2 Recovery](https://dl.twrp.me/s2/) is recommended   
+- adb & fastboot installed
 
-#### Unlock the bootloader
+__Unlock the bootloader__
 
 1. Enable OEM unlock in the Developer options under device Settings, if present.  
 
@@ -217,7 +219,7 @@ fastboot oem unlock-go
 6. If the device doesn’t automatically reboot, reboot it. It should now be unlocked.  
 7. Since the device resets completely, you will need to re-enable USB debugging to continue.  
 
-#### Installing a custom recovery using fastboot
+__Installing a custom recovery using fastboot__
 
 1. Download a custom recovery - you can download TWRP. Simply download the latest recovery file, named something like twrp-x.x.x-x-s2.img.  
 2. Connect your device to your PC via USB.  
@@ -240,7 +242,7 @@ fastboot flash recovery <recovery_filename>.img
 adb reboot recovery
 ```
 
-#### Installing LineageOS from recovery
+__Installing LineageOS from recovery__
 
 1. Download the DatOS Installation package zip from prebuilts repo  
 2. If you are not in recovery, reboot into recovery.  
@@ -252,13 +254,16 @@ adb reboot recovery
   - On the host machine, sideload the package using: adb sideload filename.zip.  
 > TIP: If the process succeeds the output will stop at 47% and report adb: failed to read command: Success.
 
-7. Once you have installed everything successfully, run `adb reboot`.
+7. Once you have installed everything successfully, run:  
+ ```
+adb reboot
+```
 
 Congradulations! Youre done - Enjoy DatOS!
 
 </details>
 
-### Get assistance
+## Get assistance
 
 If you have any issues, please get help on our community: 
 - [Discord Server](https://discord.gg/2aMsFe6Ycz)
