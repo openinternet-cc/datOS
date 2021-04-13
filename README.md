@@ -287,5 +287,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Notice
 
-By installing and using DatOS, you are agreeing to our [Terms of Service](https://terms.openinternet.cc).
 
+> By installing and using DatOS, you are agreeing to our [Terms of Service](https://terms.openinternet.cc).
+
+> You are responsible for your own Service Agreement with your carrier. 
