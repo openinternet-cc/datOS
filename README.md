@@ -5,7 +5,7 @@ DatOS is a custom ROM built for people who would like to use their mobile phone 
 
 > "DatOS is a custom ROM built for people who would like to use their mobile phone data for home internet."
 
-For many people, stable wired internet options are limited or unavailable - leaving expensive, ugly, and slow sattalite solutions as the only option. But what if you could just use your mobile data connection to power all your devices? Unfortunately for these would-be users, there are some [_systemic barriers_](https://danielpocock.com/android-betrays-tethering-data/) of most built-in operating systems which tend to favor the carrier over the customer and prevent this type of usage. 
+For many people, stable wired internet options are limited or unavailable - leaving expensive, ugly, and slow sattalite solutions as the only option. But what if you could just use your mobile data connection to power all your devices? Unfortunately for these would-be users, there exist [_incentive misalignment_](https://danielpocock.com/android-betrays-tethering-data/) of most built-in operating systems which tend to favor the carrier over the customer and prevent this type of usage. 
 
 The basic problems will be discussed below and also described how DatOS addresses these issues:
 
