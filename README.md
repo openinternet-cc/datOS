@@ -74,7 +74,7 @@ Download latest official Prebuilt release to flash on your own device.
 Step 1) Download latest official prebuilt zip file   
 Step 2) Skip to [installing](#installing) section
 
-<button name="button" style='font-weight: bold;color:#42b983;cursor:pointer;' onclick="window.open('https://github.com/openinternet-cc/prebuilt')">Download Now</button>
+<button name="button" style='font-weight: bold;color:#42b983;cursor:pointer;' onclick="window.open('https://github.com/openinternet-cc/android/releases/')">Download Now</button>
 
 ## Build it Yourself
 
