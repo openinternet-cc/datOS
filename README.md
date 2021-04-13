@@ -1,12 +1,17 @@
 # About
 
-_DatOS is built for people who would like to use their mobile phone as a general purpose internet router._
+DatOS is a custom ROM built for people who would like to use their mobile phone data for home internet. Similar to a VPN, it masks _how_ you use your data, rather than _where_ you use your data - allowing you to bypass arbitrary carrier usage-based restrictions.
 
-For many people, stable wired internet options are limited or unavailable - therefore cellular based internet options may be the only option. Unfortunately, there are some systemic barriers which generally cause problems for these types of users. The basic problems will be discussed below and also described how DatOS addresses these issues.
+
+> "DatOS is a custom ROM built for people who would like to use their mobile phone data for home internet."
+
+For many people, stable wired internet options are limited or unavailable - leaving expensive, ugly, and slow sattalite solutions as the only option. But what if you could just use your mobile data connection to power all your devices? Unfortunately for these would-be users, there are some [_systemic barriers_](https://danielpocock.com/android-betrays-tethering-data/) of most built-in operating systems which tend to favor the carrier over the customer and prevent this type of usage. 
+
+The basic problems will be discussed below and also described how DatOS addresses these issues:
 
 ## Prevent Hotspot Limitations
 
-The main issue DatOS addresses are the arbitrary usage-based restrictions that cellular carriers put on their unlimited data plans. 
+> "Similar to a VPN, it masks how you use your data, rather than where you use your data - allowing you to bypass arbitrary carrier usage-based restrictions."
 
 Generally, carriers will detect, and limit/throttle hotspot, also known as "tethering", data usage; this essentially means your ability to share mobile data with other devices like your TV or computer. 
 
