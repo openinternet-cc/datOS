@@ -49,6 +49,8 @@ Currently, DatOS is supported on:
 
 > NOTE: If you would like to help expand DatOS support to new devices, please reach out to glenn@openinternet.cc
 
+---
+
 # Try It
 
 ## Preinstalled Device Kit
@@ -57,8 +59,7 @@ Currently, DatOS is supported on:
 
 ![product](assets/prod.gif)
 
-Package comes with: 
-
+__M1 Freedom Router Kit:__
   - le eco s2 (preinstalled datos)
   - case
   - charging dock & cable
@@ -270,8 +271,9 @@ Congradulations! Youre done - Enjoy DatOS!
 
 ## Get assistance
 
-If you have any issues, please get help on our community: 
-- [Discord Server](https://discord.gg/2aMsFe6Ycz)
+If you have any issues, please get help on our community [discord server](https://discord.gg/2aMsFe6Ycz). 
+
+---
 
 # Legal
 
