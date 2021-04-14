@@ -65,7 +65,7 @@ Package comes with:
   - base station
   - warranty
 
-<button name="button" style='font-weight: bold;color:#42b983;cursor:pointer;' onclick="window.open('https://openinternet.cc')">Shop Now</button>
+<button name="button" style='font-weight: bold;color:#42b983;cursor:pointer;' onclick="window.open('https://openinternet.cc/shop')">Shop Now</button>
 
 ## Prebuilt Zip
 
