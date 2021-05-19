@@ -1,3 +1,17 @@
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-kerning: auto !important;
+  font-family: MaisonNeue,sans-serif;
+}
+html * {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-kerning: auto !important;
+  font-family: MaisonNeue,sans-serif;
+}
  section.cover.has-mask .mask {
    background: none !important;
  }
@@ -88,4 +102,230 @@ body {
 /* because the bgcolor change in previous css rule. font-color when using inline code tag */
 .markdown-section code {
     color: #eccb84; 
+}
+
+/* header */
+#sowrap {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 12px;
+  left: 28px;
+}
+
+p {
+  font-size: 1.27119rem;
+  line-height: 2.0339rem;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#header {
+  top: 0;
+  z-index: 101;
+  width: 100%;
+  height: 70px;
+  background: white;
+  position: fixed;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  opacity: 1 !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.4);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  padding: 0 2%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 48em) {
+  #header {
+    padding: 0 5% !important;
+  }
+  .container {
+    padding: 0 8%;
+  }
+  .container-xl {
+    padding: 0 8%;
+  }
+  .container-100 {
+    padding: 0 8% !important;
+  }
+  #prodimageview {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+  #prodinfoview {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.container-100 {
+  width: 100% !important;
+  margin-top: 50px;
+}
+
+#droper {
+  color: black;
+}  
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#headerlogo {
+  cursor: pointer;
+  position: absolute;
+  left: 48%;
+  top: 13px;
+  width: 44px;
+  height: auto;
+}
+
+#checkwrap {
+  justify-content: center;
+  position: relative;
+  margin-left:auto;
+  width: 28px;
+  cursor: pointer;
+}
+#topshop {
+  line-height: normal;
+  margin-left:auto;
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: #556cd6;
+  color: white;
+  font-weight: bold;
+  font-size:90%;
+  cursor: pointer;
+  border: none;
+}
+
+.sidebar {
+  margin-top: 70px !important;
+}
+/* sidenav*/
+.sidenav {
+  height: 100%;
+  min-width: 296px;
+  width: 30%;
+  position: fixed;
+  z-index: 105;
+  top: 0;
+  left: -30%;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 100px;
+}
+.sidenav-shop {
+  height: 100%;
+  width: 610;
+  position: fixed;
+  z-index: 100;
+  top: 70;
+  right: -610;
+  background: #f8f9fa;
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.sidenav a {
+  transition-duration: .1s;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: Sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #272d30;
+  display: block;
+}
+
+.sidenav.is-open {
+  left: 0;
+}
+
+.sidenav-shop.is-open {
+  right: 0;
+}
+
+.header-navigation-overlay {
+  background: rgba(11,14,14,.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 102;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+.sidenav.is-open+.header-navigation-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  font-size: 36px;
+  padding: 0px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 64em) {
+  .sidenav {
+    left: -100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.cart-panel-overlay {
+  background: rgba(0,0,0,.8);
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  right: 0;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  z-index: 6;
+}
+
+
+.sidenav-shop.is-open+.cart-panel-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidenav *{
+  line-height: 2.54237rem;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: auto;
+  scroll-behavior: smooth;
 }

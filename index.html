@@ -19,6 +19,30 @@
    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+  <a href="https://openinternet.cc">Home</a>
+  <a href="https://openinternet.cc/faq">FAQ</a>
+  <a href="https://openinternet.cc/shop">Shop</a>
+  <a href="https://setup.openinternet.cc">Setup Guide</a>
+  <a href="https://vpn.openinternet.cc">VPN</a>
+  <a href="https://datos.openinternet.cc">DatOS™</a>
+  <a href="https://terms.openinternet.cc">Privacy & Terms</a>
+</div>
+<div class='header-navigation-overlay'>
+</div>
+
+  <div id=header>
+    <div class=flexer>
+    <div id=sowrap>
+      <span id=droper style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+      <a href='https://openinternet.cc'>
+        <img id='headerlogo' src='/assets/newlogo-black.png'> 
+      </a>
+  </div>
+    <button id=topshop onclick='window.location.href="https://openinternet.cc/shop"'>Shop</button>
+  </div>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -26,6 +50,12 @@
       repo: '',
       coverpage: true
     }
+  function openNav() {
+    document.getElementById('mySidenav').classList.add('is-open')
+  }
+  function closeNav() {
+    document.getElementById('mySidenav').classList.remove('is-open')
+  }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <style>
