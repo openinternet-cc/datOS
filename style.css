@@ -104,7 +104,7 @@ body {
     color: #eccb84; 
 }
 
-/* header */
+/* start header stuff */
 #sowrap {
   align-items: center;
   justify-content: center;
@@ -198,7 +198,7 @@ img {
   margin-left:auto;
   border-radius: 30px;
   padding: 12px 20px;
-  background: #556cd6;
+  background: #364def;
   color: white;
   font-weight: bold;
   font-size:90%;
@@ -329,3 +329,5 @@ img {
   font-kerning: auto;
   scroll-behavior: smooth;
 }
+
+/* end of header stuff */
